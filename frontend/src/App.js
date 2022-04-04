@@ -1,8 +1,16 @@
-import React from 'react'
+import React from 'react';
+import { Routes, Route, useNavigation } from 'react-router-dom'
+import Login from './components/Login';
+import Home from './containers/Home';
 
 const App = () => {
   return (
-    <h1 className='text-3xl font-bold underline'>Hello Gianluca</h1>
+    <div>
+      <Routes>
+        <Route path="/login" element={<Login />}></Route>
+        <Route path="/*" element={<Home />}></Route>
+      </Routes>
+    </div>
   )
 }
 
