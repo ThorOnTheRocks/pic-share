@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { Navbar, Feed, PinDetail, CreatePin, Search } from '../components';
+import { Navbar, Feed, PinDetail, CreatePin, Search, Pin } from '../components';
 import { Routes, Route } from 'react-router-dom'
 
 const Pins = ({ user }) => {
